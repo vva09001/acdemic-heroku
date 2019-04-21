@@ -1,0 +1,30 @@
+$primaryColor: #203e7d;
+$secondColor: #0060ae;
+$thirdColor: #e9ca73; 
+
+.addIcon {
+  cursor: pointer;
+  &:hover{
+    path {
+      fill: $secondColor;
+    }
+  }
+}
+
+.editIcon {
+  cursor: pointer;
+  &:hover{
+    path {
+      fill: $thirdColor !important
+    }
+  }
+}
+
+.X-icon {
+  cursor: pointer;
+  &:hover{
+    path {
+      fill: $thirdColor
+    }
+  }
+}

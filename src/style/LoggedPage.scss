@@ -1,0 +1,8 @@
+.pageContent {
+  margin-left: 230px;
+  margin-right: 10px;
+  margin-top: 50px;
+  @media all and (max-width: 728px) {
+    margin-left: 10px;
+  }
+}
