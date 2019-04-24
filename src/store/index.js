@@ -7,7 +7,8 @@ import statistical from "./slice/statistical.slice";
 import dialogController from "./slice/dialogController.slice";
 import validate from "./slice/validate.slice";
 import notice from "./slice/notice.slice";
-import classes from './slice/class.slice'
+import classes from "./slice/class.slice";
+import login from "./slice/login.slice";
 
 const rootReducer = combineReducers({
   title: titleSlice.reducer,
@@ -16,7 +17,8 @@ const rootReducer = combineReducers({
   dialogController: dialogController.reducer,
   validate: validate.reducer,
   notice: notice.reducer,
-  classes: classes.reducer
+  classes: classes.reducer,
+  login: login.reducer
 });
 
 export default () =>

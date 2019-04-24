@@ -275,3 +275,161 @@ $thirdColor: #e9ca73;
   }
 }
 
+/*Responsive for mobile screen from 414px width*/
+
+@media only screen and (max-width: 414px) {
+  .MuiDialog-paper-5 {
+    margin: 0 !important;
+  }
+
+  .sDialog {
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    .sSideDialog {
+      width: 100%;
+      min-height: 135px;
+      .profileAvatar {
+        width: 100px;
+        height: 100px;
+        img {
+          height: 100px;
+          width: 100px;
+        }
+      }
+      input {
+        height: 25px;
+        font-size: 12px;
+      }
+      .closeBtn,
+      .saveBtn {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+        padding: 5px 10px;
+        margin-bottom: 0px;
+      }
+      .closeDialogBtn,
+      .saveDialogBtn {
+        width: 50% !important;
+        // margin: 0;
+      }
+      .closeDialogBtn {
+        right: 0;
+        left: auto;
+        margin: 0;
+        border-radius: 0 0 2px 0;
+        border-left: 1px solid #dcdcdc;
+      }
+      .saveDialogBtn {
+        left: 0;
+        margin: 0;
+        border-radius: 0 0 0 2px;
+        border-right: 1px solid #dcdcdc;
+      }
+    }
+    .sDialogBody {
+      width: 100%;
+      .sDialogTitle {
+        display: none;
+      }
+      .sDialogContent {
+        margin: 5px;
+        height: 275px;
+      }
+    }
+  }
+
+  .cDialog {
+    width: 300px;
+    .cTitle {
+      .title {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .lsDialog {
+    width: 300px;
+    .lsTitle {
+      min-height: 35px;
+      .title {
+        font-size: 12px;
+      }
+    }
+    .lsDialogContent {
+      height: 400px;
+      padding: 10px;
+      background: #dcdcdc;
+      overflow-y: auto;
+    }
+    .lsDialogFooter {
+      min-height: 35px;
+      background: $secondColor;
+      .lsBtn {
+        background: $secondColor;
+        border-radius: 0px 0px 2px 2px;
+        padding: 5px;
+        width: 100%;
+        height: 35px;
+        color: #fff;
+        font-size: 12px;
+        &:hover {
+          background: $thirdColor;
+          color: $primaryColor;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .closeBtn,
+  .saveBtn {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    background: $secondColor;
+    &:hover {
+      background: $thirdColor;
+      color: #0060ae;
+      font-weight: bold;
+    }
+  }
+
+  .form {
+    label {
+      width: 85px;
+      font-size: 10px;
+    }
+    input {
+      font-size: 10px;
+      width: 195px;
+    }
+    textarea {
+      font-size: 10px;
+      width: 195px;
+    }
+  }
+
+  .addForm,
+  .editForm {
+    select {
+      font-size: 10px;
+      width: 195px;
+      min-height: 30px;
+    }
+    .gender {
+      input {
+        width: 13px;
+        height: 13px;
+        margin-right: 10px;
+      }
+      span {
+        margin-right: 15px;
+        font-size: 10px;
+      }
+    }
+  }
+}
